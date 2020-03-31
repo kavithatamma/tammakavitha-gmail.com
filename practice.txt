@@ -1,0 +1,25 @@
+int listSize = suggestionsElemets.size();
+        if (listSize == 0) {
+            fail("I dont have any suggestion for u" + item);
+        }
+
+        int randomIndex = new RandomNumberHelper().generateRandomNumber(listSize);
+        WebElement selectedElement = suggestionsElemets.get(randomIndex);
+
+        String selectedSuggestio = selectedElement.getText();
+        selectedElement.click()
+((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", items.get(randomProduct));
+
+//div[@class='product-tile']
+
+//ul[@id='search-result-items']/li[@class='grid-tile']
+
+//div[@class='search-result-content'and @class='js-search-result-content']
+//ul[@id='search-result-items']/li[@class='grid-tile']/div[@class='product-tile']
+
+//ol[@class='menu-section']/li/a[@class='menu-item']/span[text()="Sale - Up to 70% Off Everything"]
+
+//a[@href='https://www.boohoo.com/womens/sale']/span[text()='Sale - Up to 70% Off Everything']
+
+//div[@class='search-result-content js-search-result-content']/ul[@id='search-result-items']/li[@class='grid-tile']
+

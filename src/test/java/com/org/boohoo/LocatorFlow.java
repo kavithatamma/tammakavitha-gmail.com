@@ -3,6 +3,8 @@ package com.org.boohoo;
 import com.org.boohoo.driver.DriverManager;
 import com.org.boohoo.utils.RandomNumberHelper;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.hamcrest.text.IsEqualIgnoringCase;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -25,12 +27,12 @@ public class LocatorFlow  {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        WebElement sale = driver.findElement(By.linkText("SALE"));
+        WebElement sale = driver.findElement(By.xpath("//li[contains(@class,'sale-menu womens-womens-sale-menu')]/a"));
         Actions action = new Actions(driver);
         action.moveToElement(sale).build().perform();
-        WebElement sale80 = driver.findElement(By.xpath("(//ol[@class='menu-title hide-womens-mobile hide-on-global-offers-tab'])[1]"));
+        WebElement sale80 = driver.findElement(By.linkText("Sale - Up to 70% Off Everything"));
         sale80.click();
-        List<WebElement> saleItems = driver.findElements(By.xpath("//div[@class='search-result-content js-search-result-content']/ul[@id='search-result-items']/li[@class='grid-tile']"));
+        List<WebElement> saleItems = driver.findElements(By.cssSelector("div.product-tile-name>a"));
         int size = saleItems.size();
         System.out.println(size);
         if(size == 0 )
@@ -38,12 +40,47 @@ public class LocatorFlow  {
             System.out.println("there are no sale items ");
         }
         Random rand =new Random();
-
-        int randomIndex = rand.nextInt(size-1);
+        int randomIndex = rand.nextInt(size);
         System.out.println(randomIndex);
-        //((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", saleItems.get(randomIndex));
         WebElement selectedItem = saleItems.get(randomIndex);
-        // Thread.sleep(2000);
         selectedItem.click();
+        String actualProdTitle = driver.getTitle();
+
+        // randomly choosing colour
+        List<WebElement> colourUk = driver.findElements(By.xpath("//ul[@class ='swatches color clearfix']/li"));
+        int colourUklength = colourUk.size();
+        System.out.println(colourUklength);
+        int randomColourUkLength = rand.nextInt(colourUklength);
+        WebElement selectedColour = colourUk.get(randomColourUkLength);
+        Thread.sleep(3000);
+        selectedColour.click();
+        Thread.sleep(3000);
+        driver.navigate().refresh();
+
+        //randomly choosing length
+        List<WebElement> sizeUk = driver.findElements(By.xpath("//ul[@class='swatches size clearfix']/li"));
+        int sizeUklength = sizeUk.size();
+        System.out.println(sizeUklength);
+        int randomSizeUkLength = rand.nextInt(sizeUklength);
+        WebElement selectedSize = sizeUk.get(randomSizeUkLength);
+        Thread.sleep(3000);
+        selectedSize.click();
+        //System.out.println(selectedSize);
+        Thread.sleep(3000);
+        WebElement addToBag = driver.findElement(By.id("add-to-cart"));
+        addToBag.click();
+        String prodBasketTitle = driver.getTitle();
+
+        //assertion
+       /* if(actualProdTitle.equalsIgnoreCase(prodBasketTitle))
+        {
+            System.out.println("correct product added to basket");
+        }
+        else
+        {
+            System.out.println("product didn't match");
+        } */
+        Assert.assertEquals("correct product",actualProdTitle, prodBasketTitle);
+
     }
 }
