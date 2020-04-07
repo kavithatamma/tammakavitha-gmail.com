@@ -34,23 +34,27 @@ public class LocatorFlow  {
         sale80.click();
         List<WebElement> saleItems = driver.findElements(By.cssSelector("div.product-tile-name>a"));
         int size = saleItems.size();
-        System.out.println(size);
+        System.out.println("total sale items "+" " + size);
         if(size == 0 )
         {
             System.out.println("there are no sale items ");
         }
-        Random rand =new Random();
-        int randomIndex = rand.nextInt(size);
-        System.out.println(randomIndex);
-        WebElement selectedItem = saleItems.get(randomIndex);
+        //Random rand =new Random();
+        //int randomIndex = rand.nextInt(size);
+        //System.out.println(randomIndex);*/
+        int randomSaleItem = new RandomNumberHelper().generateRandomNumber(size);
+        System.out.println("randomly selected  sale item" +" "+ randomSaleItem);
+        WebElement selectedItem = saleItems.get(randomSaleItem);
         selectedItem.click();
         String actualProdTitle = driver.getTitle();
 
         // randomly choosing colour
         List<WebElement> colourUk = driver.findElements(By.xpath("//ul[@class ='swatches color clearfix']/li"));
         int colourUklength = colourUk.size();
-        System.out.println(colourUklength);
-        int randomColourUkLength = rand.nextInt(colourUklength);
+        System.out.println(" total color length" + " " +colourUklength);
+        //int randomColourUkLength = rand.nextInt(colourUklength);
+        int randomColourUkLength = new RandomNumberHelper().generateRandomNumber(colourUklength );
+        System.out.println("randomly selected  color" + " " +randomColourUkLength);
         WebElement selectedColour = colourUk.get(randomColourUkLength);
         Thread.sleep(3000);
         selectedColour.click();
@@ -60,12 +64,14 @@ public class LocatorFlow  {
         //randomly choosing length
         List<WebElement> sizeUk = driver.findElements(By.xpath("//ul[@class='swatches size clearfix']/li"));
         int sizeUklength = sizeUk.size();
-        System.out.println(sizeUklength);
-        int randomSizeUkLength = rand.nextInt(sizeUklength);
+        System.out.println("total size length "+" " +sizeUklength);
+        //int randomSizeUkLength = rand.nextInt(sizeUklength);
+        int randomSizeUkLength = new RandomNumberHelper().generateRandomNumber(sizeUklength);
+        System.out.println("selected  size  "+" " +randomSizeUkLength);
         WebElement selectedSize = sizeUk.get(randomSizeUkLength);
         Thread.sleep(3000);
         selectedSize.click();
-        //System.out.println(selectedSize);
+       // System.out.println("total size length"+selectedSize);
         Thread.sleep(3000);
         WebElement addToBag = driver.findElement(By.id("add-to-cart"));
         addToBag.click();
