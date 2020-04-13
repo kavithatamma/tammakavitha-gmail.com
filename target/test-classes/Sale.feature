@@ -1,8 +1,11 @@
-Feature : Sale
-  Scenario: Adding sale item to the basket
+Feature: Sale
+  As an end  User
+  I want to view products in sale
+  so that I can purchase  products
 
-  Given I am on Home page
-  When I click on SALE menu
-  Then SALE sub-options should be loaded
-  Then click on sale sub-option sale items should be displayed
-  Then Add the selected sale item to the shopping bag
+  Scenario: Purchase sale products
+    Given User is on home page
+    When User move over sale menu
+    Then User click on special sales offer
+    Then user selects desired sale products
+    Then selected products should be added to the basket

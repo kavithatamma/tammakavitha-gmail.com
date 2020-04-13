@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="14e0f4ce-e898-4804-9003-9cfb06bc85ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Resources/Sale.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/Sale.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/LocatorFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/LocatorFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/RegressionSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/RegressionSuite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/driver/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/driver/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/HomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +32,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZFlnoJ1FCYbRCxBAF4Xujgnak9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -43,7 +46,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../automationpractice" />
   </component>
-  <component name="RunManager" selected="JUnit.RegressionSuite.sale">
+  <component name="RunManager" selected="JUnit.RunCukesTest">
     <configuration name="LocatorFlow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Boohoo_tmp" />
       <extension name="coverage">
@@ -123,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RunCukesTest" />
         <item itemvalue="JUnit.RegressionSuite.sale" />
         <item itemvalue="JUnit.RegressionSuite" />
         <item itemvalue="JUnit.LocatorFlow" />
         <item itemvalue="JUnit.LocatorFlow.sale" />
-        <item itemvalue="JUnit.RunCukesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -157,6 +160,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1586468505970">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1586468505970" />
     <state x="443" y="175" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584443284734">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -165,22 +172,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586207612023" />
-    <state width="1323" height="163" key="GridCell.Tab.0.bottom" timestamp="1586295051663">
+    <state width="1323" height="163" key="GridCell.Tab.0.bottom" timestamp="1586810368404">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586295051663" />
-    <state width="1323" height="163" key="GridCell.Tab.0.center" timestamp="1586295051663">
+    <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586810368404" />
+    <state width="1323" height="163" key="GridCell.Tab.0.center" timestamp="1586810368404">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586295051663" />
-    <state width="1323" height="163" key="GridCell.Tab.0.left" timestamp="1586295051663">
+    <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586810368404" />
+    <state width="1323" height="163" key="GridCell.Tab.0.left" timestamp="1586810368404">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586295051663" />
-    <state width="1323" height="163" key="GridCell.Tab.0.right" timestamp="1586295051663">
+    <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586810368404" />
+    <state width="1323" height="163" key="GridCell.Tab.0.right" timestamp="1586810368404">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586295051663" />
+    <state width="1323" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586810368404" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1586294113295">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

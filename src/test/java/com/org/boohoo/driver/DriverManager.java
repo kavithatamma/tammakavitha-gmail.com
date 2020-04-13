@@ -23,7 +23,7 @@ public class DriverManager  {
     }
 
     public void closeBrowser() {
-        driver.quit();
+        //driver.quit();
     }
 
     public String getCurrentUrl() {
