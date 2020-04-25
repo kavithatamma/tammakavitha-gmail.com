@@ -85,4 +85,19 @@ public class LocatorFlow  {
         Assert.assertEquals("correct product",actualProdTitle, prodBasketTitle);
 
     }
+
+    @Test
+    public void saleList(){
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.get("https://www.boohoo.com/");
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
+        WebElement sale = driver.findElement(By.xpath("//li[contains(@class,'sale-menu womens-womens-sale-menu')]/a"));
+        Actions action = new Actions(driver);
+        action.moveToElement(sale).build().perform();
+        WebElement sale80 = driver.findElement(By.linkText("Sale - Up to 70% Off Everything"));
+
+    }
 }

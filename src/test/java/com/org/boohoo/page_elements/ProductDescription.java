@@ -2,6 +2,7 @@ package com.org.boohoo.page_elements;
 
 import com.org.boohoo.driver.DriverManager;
 import com.org.boohoo.utils.RandomNumberHelper;
+import junit.framework.TestCase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -17,8 +18,14 @@ private List<WebElement> sizeUk;
 @FindBy(id = "add-to-cart")
 private WebElement addToBag;
 
+@FindBy(css = "h1.product-name.hidden-on-mobile.js-product-name")
+private WebElement prodText;
+
     public void selectColour () throws InterruptedException {
         int colourUklength = colorUk.size();
+        if(colourUklength == 0){
+            TestCase.fail("choosen colour is not available");
+        }
         int randomColourUkLength = new RandomNumberHelper().generateRandomNumber(colourUklength );
         WebElement selectedColour = colorUk.get(randomColourUkLength);
         Thread.sleep(3000);
@@ -28,17 +35,24 @@ private WebElement addToBag;
     }
 
     public void selectSize() throws InterruptedException {
-        int sizeUklength = sizeUk.size();
+        ;int sizeUklength = sizeUk.size();
+        System.out.println("size of products"+sizeUklength);
+        if(sizeUklength==0){
+            TestCase.fail("choosen size is not available");
+        }
         int randomSizeUkLength = new RandomNumberHelper().generateRandomNumber(sizeUklength);
         System.out.println("selected  size  "+" " +randomSizeUkLength);
         WebElement selectedSize = sizeUk.get(randomSizeUkLength);
         Thread.sleep(3000);
         selectedSize.click();
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
+        driver.navigate().refresh();
     }
     public void addProductToBasket(){
         addToBag.click();
-
+    }
+    public String getProdName(){
+        return prodText.getText();
     }
 
 }

@@ -8,6 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 public class ResultsPage extends DriverManager {
+    @FindBy(xpath = "(//a[@title='Go to Womens Sale'])[2]")
+    private WebElement resultsPageThumbNail;
+
     @FindBy(css = "div.product-tile-name>a")
     private List<WebElement>  saleItems;
 
@@ -21,5 +24,8 @@ public class ResultsPage extends DriverManager {
         String prodSelected = saleItems.get(randomSaleItem).getText();
         saleItems.get(randomSaleItem).click();
         return prodSelected;
+    }
+    public String getThumbNail(){
+        return resultsPageThumbNail.getText();
     }
 }

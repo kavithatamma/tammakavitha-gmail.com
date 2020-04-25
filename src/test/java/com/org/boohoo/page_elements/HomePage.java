@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends DriverManager {
-//@FindBy(xpath = "//li[contains(@class,'sale-menu womens-womens-sale-menu')]/a");
 @FindBy(xpath = "//li[contains(@class,'sale-menu womens-womens-sale-menu')]/a" )
 private WebElement sale;
 

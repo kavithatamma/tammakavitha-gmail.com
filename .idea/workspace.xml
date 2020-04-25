@@ -4,10 +4,15 @@
     <list default="true" id="14e0f4ce-e898-4804-9003-9cfb06bc85ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Resources/Sale.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/Sale.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/LocatorFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/LocatorFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/driver/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/driver/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/RunCukesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/RunCukesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/ProductDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/ProductDescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/ResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/ResultsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/step_definitions/SaleSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/step_definitions/SaleSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/utils/RandomNumberHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/utils/RandomNumberHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/LocatorFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/LocatorFlow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/step_definitions/SaleSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/step_definitions/SaleSteps.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,10 +165,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1586468505970">
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1587331228530">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1586468505970" />
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1587331228530" />
     <state x="443" y="175" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584443284734">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -172,22 +177,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586207612023" />
-    <state width="1323" height="163" key="GridCell.Tab.0.bottom" timestamp="1586810368404">
+    <state width="1323" height="163" key="GridCell.Tab.0.bottom" timestamp="1587845251391">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586810368404" />
-    <state width="1323" height="163" key="GridCell.Tab.0.center" timestamp="1586810368404">
+    <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587845251391" />
+    <state width="1323" height="163" key="GridCell.Tab.0.center" timestamp="1587845251390">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586810368404" />
-    <state width="1323" height="163" key="GridCell.Tab.0.left" timestamp="1586810368404">
+    <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587845251390" />
+    <state width="1323" height="163" key="GridCell.Tab.0.left" timestamp="1587845251390">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586810368404" />
-    <state width="1323" height="163" key="GridCell.Tab.0.right" timestamp="1586810368404">
+    <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587845251390" />
+    <state width="1323" height="163" key="GridCell.Tab.0.right" timestamp="1587845251390">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586810368404" />
+    <state width="1323" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587845251390" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1586294113295">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -204,14 +209,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586294113295" />
-    <state x="213" y="23" key="Maven.ArtifactSearchDialog" timestamp="1585688818837">
+    <state x="213" y="23" key="Maven.ArtifactSearchDialog" timestamp="1587158585689">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="213" y="23" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1585688818837" />
-    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1584767350359">
+    <state x="213" y="23" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1587158585689" />
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1587329083096">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584767350359" />
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587329083096" />
     <state x="262" y="104" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1585689559233">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
