@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="14e0f4ce-e898-4804-9003-9cfb06bc85ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Resources/Sale.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/Sale.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/LocatorFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/LocatorFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/RunCukesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/RunCukesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/ProductDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/ProductDescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/ResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/ResultsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/step_definitions/SaleSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/step_definitions/SaleSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/utils/RandomNumberHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/utils/RandomNumberHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/LocatorFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/LocatorFlow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/step_definitions/SaleSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/step_definitions/SaleSteps.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../automationpractice" />
   </component>
-  <component name="RunManager" selected="JUnit.RunCukesTest">
+  <component name="RunManager" selected="JUnit.LocatorFlow">
     <configuration name="LocatorFlow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Boohoo_tmp" />
       <extension name="coverage">
@@ -83,7 +75,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegressionSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LocatorFlow.saleList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Boohoo_tmp" />
       <extension name="coverage">
         <pattern>
@@ -92,8 +84,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.org.boohoo" />
-      <option name="MAIN_CLASS_NAME" value="com.org.boohoo.RegressionSuite" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.org.boohoo.LocatorFlow" />
+      <option name="METHOD_NAME" value="saleList" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RunCukesTest" />
-        <item itemvalue="JUnit.RegressionSuite.sale" />
-        <item itemvalue="JUnit.RegressionSuite" />
         <item itemvalue="JUnit.LocatorFlow" />
         <item itemvalue="JUnit.LocatorFlow.sale" />
+        <item itemvalue="JUnit.LocatorFlow.saleList" />
+        <item itemvalue="JUnit.RunCukesTest" />
+        <item itemvalue="JUnit.RegressionSuite.sale" />
       </list>
     </recent_temporary>
   </component>
@@ -177,22 +170,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586207612023" />
-    <state width="1323" height="163" key="GridCell.Tab.0.bottom" timestamp="1587845251391">
+    <state width="1323" height="195" key="GridCell.Tab.0.bottom" timestamp="1587918729689">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587845251391" />
-    <state width="1323" height="163" key="GridCell.Tab.0.center" timestamp="1587845251390">
+    <state width="1323" height="195" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587918729689" />
+    <state width="1323" height="195" key="GridCell.Tab.0.center" timestamp="1587918729689">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587845251390" />
-    <state width="1323" height="163" key="GridCell.Tab.0.left" timestamp="1587845251390">
+    <state width="1323" height="195" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587918729689" />
+    <state width="1323" height="195" key="GridCell.Tab.0.left" timestamp="1587918729688">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587845251390" />
-    <state width="1323" height="163" key="GridCell.Tab.0.right" timestamp="1587845251390">
+    <state width="1323" height="195" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587918729688" />
+    <state width="1323" height="195" key="GridCell.Tab.0.right" timestamp="1587918729689">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587845251390" />
+    <state width="1323" height="195" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587918729689" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1586294113295">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -1,5 +1,7 @@
 package com.org.boohoo;
 
+import com.org.boohoo.driver.DriverManager;
+import com.org.boohoo.page_elements.ResultsPage;
 import com.org.boohoo.utils.RandomNumberHelper;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
@@ -15,6 +17,9 @@ import java.util.concurrent.TimeUnit;
 
 public class LocatorFlow  {
   public static WebDriver driver;
+  public DriverManager driverManager= new DriverManager();
+
+   ResultsPage resultsPage = new ResultsPage();
     @Test
     public void sale() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
@@ -54,7 +59,7 @@ public class LocatorFlow  {
         WebElement selectedColour = colourUk.get(randomColourUkLength);
         Thread.sleep(3000);
         selectedColour.click();
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
         driver.navigate().refresh();
 
         //randomly choosing length
@@ -65,26 +70,27 @@ public class LocatorFlow  {
         int randomSizeUkLength = new RandomNumberHelper().generateRandomNumber(sizeUklength);
         System.out.println("selected  size  "+" " +randomSizeUkLength);
         WebElement selectedSize = sizeUk.get(randomSizeUkLength);
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
         selectedSize.click();
+        driver.navigate().refresh();
+        WebElement quantity = driver.findElement(By.id("Quantity"));
+        quantity.clear();
+        quantity.sendKeys("3");
+        //String strQuantity=quantity.getAttribute("value");
+        String strQuantity = quantity.getText();
+        System.out.println(strQuantity);
+       // int qty = Integer.parseInt(strQuantity);
+      // if(qty>10 && qty<0){
+        //    System.out.println("Please enter a value less than or equal to 10");
+       // }
        // System.out.println("total size length"+selectedSize);
         Thread.sleep(3000);
         WebElement addToBag = driver.findElement(By.id("add-to-cart"));
+
         addToBag.click();
         String prodBasketTitle = driver.getTitle();
 
-        //assertion
-       /* if(actualProdTitle.equalsIgnoreCase(prodBasketTitle))
-        {
-            System.out.println("correct product added to basket");
-        }
-        else
-        {
-            System.out.println("product didn't match");
-        } */
-        Assert.assertEquals("correct product",actualProdTitle, prodBasketTitle);
-
-    }
+           }
 
     @Test
     public void saleList(){
@@ -98,6 +104,7 @@ public class LocatorFlow  {
         Actions action = new Actions(driver);
         action.moveToElement(sale).build().perform();
         WebElement sale80 = driver.findElement(By.linkText("Sale - Up to 70% Off Everything"));
-
+        //ResultsPage resultsPage = new ResultsPage();
+        resultsPage.selectAnyProduct();
     }
 }
