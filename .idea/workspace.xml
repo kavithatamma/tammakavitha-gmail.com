@@ -3,8 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="14e0f4ce-e898-4804-9003-9cfb06bc85ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/LocatorFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/LocatorFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Resources/Sale.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/Sale.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/LocatorFlow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/RunCukesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/RunCukesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/ProductDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/page_elements/ProductDescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/org/boohoo/step_definitions/SaleSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/org/boohoo/step_definitions/SaleSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Sale.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Sale.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/LocatorFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/LocatorFlow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/RunCukesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/RunCukesTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/page_elements/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/page_elements/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/page_elements/ProductDescription.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/page_elements/ProductDescription.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/step_definitions/SaleSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/org/boohoo/step_definitions/SaleSteps.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,18 +53,35 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../automationpractice" />
   </component>
-  <component name="RunManager" selected="JUnit.LocatorFlow">
-    <configuration name="LocatorFlow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RunCukesTest">
+    <configuration name="Collections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testCollections.Collections" />
       <module name="Boohoo_tmp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.org.boohoo.*" />
+          <option name="PATTERN" value="testCollections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.org.boohoo" />
-      <option name="MAIN_CLASS_NAME" value="com.org.boohoo.LocatorFlow" />
-      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: View products in sale" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/Resources/sale_tmp.feature" />
+      <option name="GLUE" value="com.org.boohoo" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="Boohoo_tmp" />
+      <option name="NAME_FILTER" value="^View products in sale$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^View products in sale$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: View products in sale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -91,22 +118,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegressionSuite.sale" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Boohoo_tmp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.org.boohoo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.org.boohoo" />
-      <option name="MAIN_CLASS_NAME" value="com.org.boohoo.RegressionSuite" />
-      <option name="METHOD_NAME" value="sale" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RunCukesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Boohoo_tmp" />
       <extension name="coverage">
@@ -124,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LocatorFlow" />
-        <item itemvalue="JUnit.LocatorFlow.sale" />
-        <item itemvalue="JUnit.LocatorFlow.saleList" />
         <item itemvalue="JUnit.RunCukesTest" />
-        <item itemvalue="JUnit.RegressionSuite.sale" />
+        <item itemvalue="Application.Collections" />
+        <item itemvalue="JUnit.LocatorFlow.saleList" />
+        <item itemvalue="JUnit.LocatorFlow.sale" />
+        <item itemvalue="Cucumber java.Scenario: View products in sale" />
       </list>
     </recent_temporary>
   </component>
@@ -158,34 +169,42 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1587331228530">
+    <state x="137" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588090229207">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1587331228530" />
+    <state x="137" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1588090229207" />
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1588630847114">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1588630847114" />
     <state x="443" y="175" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584443284734">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="443" y="175" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1584443284734" />
+    <state x="484" y="234" width="398" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589230983101">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="484" y="234" width="398" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1589230983101" />
     <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1586207612023">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586207612023" />
-    <state width="1323" height="195" key="GridCell.Tab.0.bottom" timestamp="1587918729689">
+    <state width="1323" height="195" key="GridCell.Tab.0.bottom" timestamp="1589576180113">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="195" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587918729689" />
-    <state width="1323" height="195" key="GridCell.Tab.0.center" timestamp="1587918729689">
+    <state width="1323" height="195" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589576180113" />
+    <state width="1323" height="195" key="GridCell.Tab.0.center" timestamp="1589576180113">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="195" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587918729689" />
-    <state width="1323" height="195" key="GridCell.Tab.0.left" timestamp="1587918729688">
+    <state width="1323" height="195" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589576180113" />
+    <state width="1323" height="195" key="GridCell.Tab.0.left" timestamp="1589576180113">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="195" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587918729688" />
-    <state width="1323" height="195" key="GridCell.Tab.0.right" timestamp="1587918729689">
+    <state width="1323" height="195" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589576180113" />
+    <state width="1323" height="195" key="GridCell.Tab.0.right" timestamp="1589576180113">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="195" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587918729689" />
+    <state width="1323" height="195" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589576180113" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1586294113295">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -206,13 +225,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="213" y="23" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1587158585689" />
-    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1587329083096">
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1589573152002">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587329083096" />
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589573152002" />
     <state x="262" y="104" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1585689559233">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="262" y="104" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1585689559233" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Boohoo_tmp$Scenario__View_products_in_sale.ic" NAME="Scenario: View products in sale Coverage Results" MODIFIED="1588090608403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cucumber.api.cli.*</FILTER>
+    </SUITE>
   </component>
 </project>

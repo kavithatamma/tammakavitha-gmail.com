@@ -10,7 +10,7 @@ public class HomePage extends DriverManager {
 @FindBy(xpath = "//li[contains(@class,'sale-menu womens-womens-sale-menu')]/a" )
 private WebElement sale;
 
-@FindBy(linkText = "Sale - Up to 70% Off Everything")
+@FindBy(xpath = "(//span[contains(text(),'Up to 70% Off Sale!')])[1]")
     private WebElement sale80;
 
     public String getTitle(){
